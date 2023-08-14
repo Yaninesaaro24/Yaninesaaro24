@@ -1,0 +1,8 @@
+int main()
+{
+    string nombre;
+    cout<<"Ingresar su nombre: ";
+    cin>>nombre;
+    cout<<"Hola Mundo: "<<nombre;
+    return 0;
+}
