@@ -1,0 +1,31 @@
+// parcial while.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int N, M;
+    float suma = 0, promedio;
+    do {
+        //pedir y validar valores
+        cout << "Ingresar el dato 1:";
+        cin >> N;
+
+    } while (N <= 0);
+    do {
+        cout << "Ingresar el dato 2:";
+        cin >> M;
+    } while (M < N);
+    //OJO ES LO CONTRARIO (M>N)
+    //Un ciclo for
+    for (int i = N; i <= M; i++) //inicializacion,condicion,incremento
+        suma = suma + i;
+    cout << "La suma es: " << suma;
+    promedio = suma / (M - N + 1);
+    cout << "El promedio es :" << promedio;
+    return 0;
+}
+    //Mostrar los resultados 
+
