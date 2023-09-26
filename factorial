@@ -1,0 +1,25 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    double x;
+    int n;
+    double suma = 0.0;
+    double factorial = 1.0;
+
+    cout<<"Ingrese el valor de x: ";
+    cin>>x;
+    cout<<"Ingrese el valor de n: ";
+    cin>>n;
+
+    for(int i = 1; i <= n; ++i) {
+        factorial *= i;
+        suma += pow(x, i) / factorial;
+    }
+
+    cout<<"El resultado de la serie es: "<<suma<<endl;
+
+    return 0;
+}
