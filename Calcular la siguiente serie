@@ -1,0 +1,27 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int i, x, n, suma=0;
+    do {
+        cout << "Ingrese el numero de elementos: ";
+        cin >> n;
+        if (n <= 0)
+            cout << "Ingrese un numero mayor a 0." << endl;
+    } while (n <= 0);
+    do {
+        cout << "Ingrese el valor de X: ";
+        cin >> x;
+        if (x <= 0)
+            cout << "Ingrese un numero mayor a 0." << endl;
+    } while (x <= 0);
+
+    for (i=1; i<=n; i++)
+    { 
+        suma = suma + pow(x, i);
+    }
+    cout << "El resultado de la suma es: " << suma;
+    return 0; 
+}
