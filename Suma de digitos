@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int Numero, X, suma = 0, digito;
+    do {
+        cout << "Ingrese el numero: ";
+        cin >> Numero;
+    } while (Numero <= 0);
+    X = Numero;
+    while (Numero != 0);//Marca el fin de la repeticion  
+    {
+
+            digito = Numero % 10;
+            suma = suma + digito;
+            Numero = (Numero / 10);
+     }
+    cout << "La suma de los siguientes digitos es :" << X<< "es: "<< suma; 
+        return 0;
+}
